@@ -1,0 +1,12 @@
+\\VBOXSVR\PagoAgil2C2017\src\PagoAgilFrba\bin\Debug\PagoAgilFrba.exe.config
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\TP Pago Facil Frba 1.0 - 2C 2017\Aplicacion Desktop\PagoAgilFrba\bin\Debug\PagoAgilFrba.exe.config
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\bin\Debug\PagoAgilFrba.exe.config
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\bin\Debug\PagoAgilFrba.exe
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\bin\Debug\PagoAgilFrba.pdb
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.csprojResolveAssemblyReference.cache
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmRol.AltaRol.resources
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.Properties.Resources.resources
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.csproj.GenerateResource.Cache
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.exe
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.pdb
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmCliente.AltaCliente.resources
