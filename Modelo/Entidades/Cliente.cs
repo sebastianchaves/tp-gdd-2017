@@ -21,6 +21,7 @@ namespace PagoAgilFrba.Model
         public int codigoPostal;
         public int piso;
         public String departamento;
+        public Boolean habilitado;
 
         public Cliente()
         {

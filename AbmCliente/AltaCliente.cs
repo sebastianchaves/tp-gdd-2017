@@ -32,6 +32,9 @@ namespace PagoAgilFrba.AbmCliente
         // Metodos
         private void agregarCliente()
         {
+
+            nuevoCliente.habilitado = true;
+
             if (camposCompletos())
             {
                 if (utils.fechaValida(nuevoCliente.fechaDeNacimiento))
@@ -69,7 +72,7 @@ namespace PagoAgilFrba.AbmCliente
         private void botonAceptar_Click(object sender, EventArgs e)
         {
             agregarCliente();
-            //utils.clearTextBoxes(this);
+            utils.clearTextBoxes(this);
         }
 
         // Boton Cancelar
@@ -196,7 +199,14 @@ namespace PagoAgilFrba.AbmCliente
         {
             try
             {
-                nuevoCliente.piso = Int32.Parse(pisoInput.Text);
+                if (pisoInput.Text == "")
+                {
+                    nuevoCliente.piso = 0;
+                }
+                else
+                {
+                    nuevoCliente.piso = Int32.Parse(pisoInput.Text);
+                }
             }
             catch (Exception ex)
             {
@@ -207,7 +217,16 @@ namespace PagoAgilFrba.AbmCliente
         // Departamento
         private void departamentoInput_Leave(object sender, EventArgs e)
         {
-            nuevoCliente.departamento = departamentoInput.Text;
+
+            if (departamentoInput.Text == "")
+            {
+                nuevoCliente.departamento = null;
+            }
+            else
+            {
+                nuevoCliente.departamento = departamentoInput.Text;
+            }
+
         }
 
     }

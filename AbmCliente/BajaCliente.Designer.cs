@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.buscarGroupBox = new System.Windows.Forms.GroupBox();
-            this.botonBuscar = new System.Windows.Forms.Button();
-            this.descripcionBuscarLabel = new System.Windows.Forms.Label();
-            this.nombreLabel = new System.Windows.Forms.Label();
-            this.apellidoLabel = new System.Windows.Forms.Label();
-            this.dniLabel = new System.Windows.Forms.Label();
             this.botonDeshabilitar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -56,116 +47,33 @@
             this.mailLabel = new System.Windows.Forms.Label();
             this.mailInput = new System.Windows.Forms.TextBox();
             this.bajaClienteLabel = new System.Windows.Forms.Label();
-            this.buscarGroupBox.SuspendLayout();
+            this.botonBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.datosClienteGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(105, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(105, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(105, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // buscarGroupBox
-            // 
-            this.buscarGroupBox.Controls.Add(this.nombreLabel);
-            this.buscarGroupBox.Controls.Add(this.apellidoLabel);
-            this.buscarGroupBox.Controls.Add(this.dniLabel);
-            this.buscarGroupBox.Controls.Add(this.descripcionBuscarLabel);
-            this.buscarGroupBox.Controls.Add(this.botonBuscar);
-            this.buscarGroupBox.Controls.Add(this.textBox2);
-            this.buscarGroupBox.Controls.Add(this.textBox3);
-            this.buscarGroupBox.Controls.Add(this.textBox1);
-            this.buscarGroupBox.Location = new System.Drawing.Point(114, 56);
-            this.buscarGroupBox.Name = "buscarGroupBox";
-            this.buscarGroupBox.Size = new System.Drawing.Size(412, 163);
-            this.buscarGroupBox.TabIndex = 4;
-            this.buscarGroupBox.TabStop = false;
-            this.buscarGroupBox.Text = "Busqueda de Cliente";
-            // 
-            // botonBuscar
-            // 
-            this.botonBuscar.Location = new System.Drawing.Point(322, 128);
-            this.botonBuscar.Name = "botonBuscar";
-            this.botonBuscar.Size = new System.Drawing.Size(84, 29);
-            this.botonBuscar.TabIndex = 1;
-            this.botonBuscar.Text = "Buscar";
-            this.botonBuscar.UseVisualStyleBackColor = true;
-            // 
-            // descripcionBuscarLabel
-            // 
-            this.descripcionBuscarLabel.AutoSize = true;
-            this.descripcionBuscarLabel.Location = new System.Drawing.Point(21, 29);
-            this.descripcionBuscarLabel.Name = "descripcionBuscarLabel";
-            this.descripcionBuscarLabel.Size = new System.Drawing.Size(213, 13);
-            this.descripcionBuscarLabel.TabIndex = 3;
-            this.descripcionBuscarLabel.Text = "Busque filtrando con los siguientes campos:";
-            // 
-            // nombreLabel
-            // 
-            this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(48, 63);
-            this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(47, 13);
-            this.nombreLabel.TabIndex = 5;
-            this.nombreLabel.Text = "Nombre:";
-            // 
-            // apellidoLabel
-            // 
-            this.apellidoLabel.AutoSize = true;
-            this.apellidoLabel.Location = new System.Drawing.Point(48, 97);
-            this.apellidoLabel.Name = "apellidoLabel";
-            this.apellidoLabel.Size = new System.Drawing.Size(47, 13);
-            this.apellidoLabel.TabIndex = 6;
-            this.apellidoLabel.Text = "Apellido:";
-            // 
-            // dniLabel
-            // 
-            this.dniLabel.AutoSize = true;
-            this.dniLabel.Location = new System.Drawing.Point(48, 131);
-            this.dniLabel.Name = "dniLabel";
-            this.dniLabel.Size = new System.Drawing.Size(29, 13);
-            this.dniLabel.TabIndex = 7;
-            this.dniLabel.Text = "DNI:";
-            // 
             // botonDeshabilitar
             // 
-            this.botonDeshabilitar.Location = new System.Drawing.Point(264, 474);
+            this.botonDeshabilitar.Location = new System.Drawing.Point(385, 274);
             this.botonDeshabilitar.Name = "botonDeshabilitar";
             this.botonDeshabilitar.Size = new System.Drawing.Size(110, 40);
-            this.botonDeshabilitar.TabIndex = 6;
+            this.botonDeshabilitar.TabIndex = 1;
             this.botonDeshabilitar.Text = "Deshabilitar";
             this.botonDeshabilitar.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 239);
+            this.label4.Location = new System.Drawing.Point(9, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 13);
+            this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Seleccione Cliente:";
+            this.label4.Text = "Clientes Encontrados:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 255);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(231, 201);
             this.dataGridView1.TabIndex = 10;
@@ -186,7 +94,7 @@
             this.datosClienteGroupBox.Controls.Add(this.telefonoInput);
             this.datosClienteGroupBox.Controls.Add(this.mailLabel);
             this.datosClienteGroupBox.Controls.Add(this.mailInput);
-            this.datosClienteGroupBox.Location = new System.Drawing.Point(264, 239);
+            this.datosClienteGroupBox.Location = new System.Drawing.Point(264, 51);
             this.datosClienteGroupBox.Name = "datosClienteGroupBox";
             this.datosClienteGroupBox.Size = new System.Drawing.Size(353, 217);
             this.datosClienteGroupBox.TabIndex = 12;
@@ -322,21 +230,28 @@
             this.bajaClienteLabel.TabIndex = 13;
             this.bajaClienteLabel.Text = "Baja Cliente";
             // 
+            // botonBuscar
+            // 
+            this.botonBuscar.Location = new System.Drawing.Point(72, 274);
+            this.botonBuscar.Name = "botonBuscar";
+            this.botonBuscar.Size = new System.Drawing.Size(110, 40);
+            this.botonBuscar.TabIndex = 0;
+            this.botonBuscar.Text = "Buscar";
+            this.botonBuscar.UseVisualStyleBackColor = true;
+            // 
             // BajaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 526);
+            this.ClientSize = new System.Drawing.Size(634, 326);
+            this.Controls.Add(this.botonBuscar);
             this.Controls.Add(this.bajaClienteLabel);
             this.Controls.Add(this.datosClienteGroupBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.botonDeshabilitar);
-            this.Controls.Add(this.buscarGroupBox);
             this.Name = "BajaCliente";
             this.Text = "Deshabilitar Cliente";
-            this.buscarGroupBox.ResumeLayout(false);
-            this.buscarGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.datosClienteGroupBox.ResumeLayout(false);
             this.datosClienteGroupBox.PerformLayout();
@@ -347,15 +262,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox buscarGroupBox;
-        private System.Windows.Forms.Button botonBuscar;
-        private System.Windows.Forms.Label descripcionBuscarLabel;
-        private System.Windows.Forms.Label nombreLabel;
-        private System.Windows.Forms.Label apellidoLabel;
-        private System.Windows.Forms.Label dniLabel;
         private System.Windows.Forms.Button botonDeshabilitar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -375,5 +281,6 @@
         private System.Windows.Forms.Label mailLabel;
         private System.Windows.Forms.TextBox mailInput;
         private System.Windows.Forms.Label bajaClienteLabel;
+        private System.Windows.Forms.Button botonBuscar;
     }
 }

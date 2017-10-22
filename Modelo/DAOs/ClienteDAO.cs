@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace PagoAgilFrba.Modelo.DAOs
 {
+
+    // TODO agregarCliente, existeDni, existeMail
     class ClienteDAO
     {
 
