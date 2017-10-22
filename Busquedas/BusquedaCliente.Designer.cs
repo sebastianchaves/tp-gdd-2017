@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buscarGroupBox = new System.Windows.Forms.GroupBox();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.apellidoLabel = new System.Windows.Forms.Label();
             this.dniLabel = new System.Windows.Forms.Label();
             this.descripcionBuscarLabel = new System.Windows.Forms.Label();
             this.botonBuscar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dniInput = new System.Windows.Forms.TextBox();
+            this.apellidoInput = new System.Windows.Forms.TextBox();
+            this.nombreInput = new System.Windows.Forms.TextBox();
             this.botonVolver = new System.Windows.Forms.Button();
+            this.dniTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.buscarGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,9 +51,9 @@
             this.buscarGroupBox.Controls.Add(this.dniLabel);
             this.buscarGroupBox.Controls.Add(this.descripcionBuscarLabel);
             this.buscarGroupBox.Controls.Add(this.botonBuscar);
-            this.buscarGroupBox.Controls.Add(this.textBox2);
-            this.buscarGroupBox.Controls.Add(this.textBox3);
-            this.buscarGroupBox.Controls.Add(this.textBox1);
+            this.buscarGroupBox.Controls.Add(this.dniInput);
+            this.buscarGroupBox.Controls.Add(this.apellidoInput);
+            this.buscarGroupBox.Controls.Add(this.nombreInput);
             this.buscarGroupBox.Location = new System.Drawing.Point(12, 12);
             this.buscarGroupBox.Name = "buscarGroupBox";
             this.buscarGroupBox.Size = new System.Drawing.Size(412, 163);
@@ -103,27 +105,28 @@
             this.botonBuscar.TabIndex = 4;
             this.botonBuscar.Text = "Buscar";
             this.botonBuscar.UseVisualStyleBackColor = true;
+            this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
             // 
-            // textBox2
+            // dniInput
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 2;
+            this.dniInput.Location = new System.Drawing.Point(105, 128);
+            this.dniInput.Name = "dniInput";
+            this.dniInput.Size = new System.Drawing.Size(187, 20);
+            this.dniInput.TabIndex = 2;
             // 
-            // textBox3
+            // apellidoInput
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 20);
-            this.textBox3.TabIndex = 1;
+            this.apellidoInput.Location = new System.Drawing.Point(105, 94);
+            this.apellidoInput.Name = "apellidoInput";
+            this.apellidoInput.Size = new System.Drawing.Size(187, 20);
+            this.apellidoInput.TabIndex = 1;
             // 
-            // textBox1
+            // nombreInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 0;
+            this.nombreInput.Location = new System.Drawing.Point(105, 60);
+            this.nombreInput.Name = "nombreInput";
+            this.nombreInput.Size = new System.Drawing.Size(187, 20);
+            this.nombreInput.TabIndex = 0;
             // 
             // botonVolver
             // 
@@ -133,6 +136,7 @@
             this.botonVolver.TabIndex = 3;
             this.botonVolver.Text = "Volver";
             this.botonVolver.UseVisualStyleBackColor = true;
+            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
             // 
             // BusquedaCliente
             // 
@@ -156,9 +160,10 @@
         private System.Windows.Forms.Label dniLabel;
         private System.Windows.Forms.Label descripcionBuscarLabel;
         private System.Windows.Forms.Button botonBuscar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox dniInput;
+        private System.Windows.Forms.TextBox apellidoInput;
+        private System.Windows.Forms.TextBox nombreInput;
         private System.Windows.Forms.Button botonVolver;
+        private System.Windows.Forms.ToolTip dniTooltip;
     }
 }

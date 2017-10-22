@@ -27,5 +27,11 @@ namespace PagoAgilFrba.Modelo.DAOs
             return false;
         }
 
+        public IList<Cliente> findCliente(string nombreCliente, string apellidoCliente, int dni)
+        {
+            IList<Cliente> resultados = new List<Cliente>();
+            return resultados;
+        }
+
     }
 }

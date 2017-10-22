@@ -57,14 +57,14 @@
             this.telefonoInput = new System.Windows.Forms.TextBox();
             this.mailLabel = new System.Windows.Forms.Label();
             this.mailInput = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.resultadosGrid = new System.Windows.Forms.DataGridView();
             this.clientesEncontradosLabel = new System.Windows.Forms.Label();
             this.modificacionClienteLabel = new System.Windows.Forms.Label();
             this.botonBuscar = new System.Windows.Forms.Button();
             this.botonModificar = new System.Windows.Forms.Button();
             this.datosClienteGroupBox.SuspendLayout();
             this.domicilioGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // datosClienteGroupBox
@@ -336,13 +336,14 @@
             this.mailInput.Size = new System.Drawing.Size(235, 20);
             this.mailInput.TabIndex = 5;
             // 
-            // dataGridView1
+            // resultadosGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(231, 321);
-            this.dataGridView1.TabIndex = 8;
+            this.resultadosGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultadosGrid.Location = new System.Drawing.Point(15, 74);
+            this.resultadosGrid.Name = "resultadosGrid";
+            this.resultadosGrid.Size = new System.Drawing.Size(231, 321);
+            this.resultadosGrid.TabIndex = 8;
+            this.resultadosGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultadosGrid_SelectionChanged);
             // 
             // clientesEncontradosLabel
             // 
@@ -362,7 +363,6 @@
             this.modificacionClienteLabel.Size = new System.Drawing.Size(149, 24);
             this.modificacionClienteLabel.TabIndex = 14;
             this.modificacionClienteLabel.Text = "Modificar Cliente";
-            this.modificacionClienteLabel.Click += new System.EventHandler(this.bajaClienteLabel_Click);
             // 
             // botonBuscar
             // 
@@ -372,6 +372,7 @@
             this.botonBuscar.TabIndex = 0;
             this.botonBuscar.Text = "Buscar";
             this.botonBuscar.UseVisualStyleBackColor = true;
+            this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
             // 
             // botonModificar
             // 
@@ -391,16 +392,15 @@
             this.Controls.Add(this.botonBuscar);
             this.Controls.Add(this.modificacionClienteLabel);
             this.Controls.Add(this.clientesEncontradosLabel);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.resultadosGrid);
             this.Controls.Add(this.datosClienteGroupBox);
             this.Name = "ModificacionCliente";
             this.Text = "Modificar Cliente";
-            this.Load += new System.EventHandler(this.ModificacionCliente_Load);
             this.datosClienteGroupBox.ResumeLayout(false);
             this.datosClienteGroupBox.PerformLayout();
             this.domicilioGroupBox.ResumeLayout(false);
             this.domicilioGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,7 +420,7 @@
         private System.Windows.Forms.TextBox telefonoInput;
         private System.Windows.Forms.Label mailLabel;
         private System.Windows.Forms.TextBox mailInput;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView resultadosGrid;
         private System.Windows.Forms.Label clientesEncontradosLabel;
         private System.Windows.Forms.Label modificacionClienteLabel;
         private System.Windows.Forms.DateTimePicker fechaDeNacimientoInput;

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace PagoAgilFrba.Modelo.Utils
 {
@@ -69,6 +70,22 @@ namespace PagoAgilFrba.Modelo.Utils
                 toolTip.Show("Formato inválido.", textBox, 1500);
                 textBox.Clear();
             }
+        }
+
+        // Metodo para iniciar grillas
+        public void iniciarGrids(DataGridView resultadosGrid)
+        {
+            resultadosGrid.BackgroundColor = Color.LightGray;
+            resultadosGrid.BorderStyle = BorderStyle.Fixed3D;
+            resultadosGrid.AllowUserToAddRows = false;
+            resultadosGrid.AllowUserToDeleteRows = false;
+            resultadosGrid.AllowUserToOrderColumns = true;
+            resultadosGrid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            resultadosGrid.DefaultCellStyle.SelectionBackColor = Color.MediumTurquoise;
+            resultadosGrid.RowsDefaultCellStyle.BackColor = Color.White;
+
+            resultadosGrid.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
+            resultadosGrid.ColumnHeadersDefaultCellStyle.ForeColor = Color.LightGray;
         }
 
     }

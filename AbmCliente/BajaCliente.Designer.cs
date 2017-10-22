@@ -30,7 +30,7 @@
         {
             this.botonDeshabilitar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.resultadosGrid = new System.Windows.Forms.DataGridView();
             this.datosClienteGroupBox = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.domicilioInput = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             this.mailInput = new System.Windows.Forms.TextBox();
             this.bajaClienteLabel = new System.Windows.Forms.Label();
             this.botonBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).BeginInit();
             this.datosClienteGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,13 +70,13 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Clientes Encontrados:";
             // 
-            // dataGridView1
+            // resultadosGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(231, 201);
-            this.dataGridView1.TabIndex = 10;
+            this.resultadosGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultadosGrid.Location = new System.Drawing.Point(12, 67);
+            this.resultadosGrid.Name = "resultadosGrid";
+            this.resultadosGrid.Size = new System.Drawing.Size(231, 201);
+            this.resultadosGrid.TabIndex = 10;
             // 
             // datosClienteGroupBox
             // 
@@ -238,6 +238,7 @@
             this.botonBuscar.TabIndex = 0;
             this.botonBuscar.Text = "Buscar";
             this.botonBuscar.UseVisualStyleBackColor = true;
+            this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
             // 
             // BajaCliente
             // 
@@ -248,11 +249,11 @@
             this.Controls.Add(this.bajaClienteLabel);
             this.Controls.Add(this.datosClienteGroupBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.resultadosGrid);
             this.Controls.Add(this.botonDeshabilitar);
             this.Name = "BajaCliente";
             this.Text = "Deshabilitar Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).EndInit();
             this.datosClienteGroupBox.ResumeLayout(false);
             this.datosClienteGroupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -264,7 +265,7 @@
 
         private System.Windows.Forms.Button botonDeshabilitar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView resultadosGrid;
         private System.Windows.Forms.GroupBox datosClienteGroupBox;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox domicilioInput;
