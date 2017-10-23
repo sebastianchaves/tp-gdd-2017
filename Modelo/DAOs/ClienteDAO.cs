@@ -12,11 +12,13 @@ namespace PagoAgilFrba.Modelo.DAOs
     class ClienteDAO
     {
 
+        // Adds
         public void agregarCliente(Cliente cliente)
         { 
 
         }
 
+        // Exists
         public Boolean existeDni(int dni)
         {
             return false;
@@ -27,10 +29,17 @@ namespace PagoAgilFrba.Modelo.DAOs
             return false;
         }
 
+        // Finds
         public IList<Cliente> findCliente(string nombreCliente, string apellidoCliente, int dni)
         {
             IList<Cliente> resultados = new List<Cliente>();
             return resultados;
+        }
+
+        // Updates
+        public void updateCliente(Cliente clienteUpdate)
+        {
+
         }
 
     }

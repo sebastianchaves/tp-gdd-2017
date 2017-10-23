@@ -61,7 +61,8 @@
             this.clientesEncontradosLabel = new System.Windows.Forms.Label();
             this.modificacionClienteLabel = new System.Windows.Forms.Label();
             this.botonBuscar = new System.Windows.Forms.Button();
-            this.botonModificar = new System.Windows.Forms.Button();
+            this.botonAceptar = new System.Windows.Forms.Button();
+            this.botonCancelar = new System.Windows.Forms.Button();
             this.datosClienteGroupBox.SuspendLayout();
             this.domicilioGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).BeginInit();
@@ -107,10 +108,11 @@
             this.deshabilitadoRadioButton.Location = new System.Drawing.Point(250, 303);
             this.deshabilitadoRadioButton.Name = "deshabilitadoRadioButton";
             this.deshabilitadoRadioButton.Size = new System.Drawing.Size(89, 17);
-            this.deshabilitadoRadioButton.TabIndex = 15;
+            this.deshabilitadoRadioButton.TabIndex = 16;
             this.deshabilitadoRadioButton.TabStop = true;
             this.deshabilitadoRadioButton.Text = "Deshabilitado";
             this.deshabilitadoRadioButton.UseVisualStyleBackColor = true;
+            this.deshabilitadoRadioButton.CheckedChanged += new System.EventHandler(this.deshabilitadoRadioButton_CheckedChanged);
             // 
             // habilitadoRadioButton
             // 
@@ -118,10 +120,11 @@
             this.habilitadoRadioButton.Location = new System.Drawing.Point(104, 303);
             this.habilitadoRadioButton.Name = "habilitadoRadioButton";
             this.habilitadoRadioButton.Size = new System.Drawing.Size(72, 17);
-            this.habilitadoRadioButton.TabIndex = 14;
+            this.habilitadoRadioButton.TabIndex = 15;
             this.habilitadoRadioButton.TabStop = true;
             this.habilitadoRadioButton.Text = "Habilitado";
             this.habilitadoRadioButton.UseVisualStyleBackColor = true;
+            this.habilitadoRadioButton.CheckedChanged += new System.EventHandler(this.habilitadoRadioButton_CheckedChanged);
             // 
             // domicilioGroupBox
             // 
@@ -158,28 +161,28 @@
             this.departamentoInput.Location = new System.Drawing.Point(281, 73);
             this.departamentoInput.Name = "departamentoInput";
             this.departamentoInput.Size = new System.Drawing.Size(37, 20);
-            this.departamentoInput.TabIndex = 13;
+            this.departamentoInput.TabIndex = 14;
             // 
             // localidadInput
             // 
             this.localidadInput.Location = new System.Drawing.Point(83, 73);
             this.localidadInput.Name = "localidadInput";
             this.localidadInput.Size = new System.Drawing.Size(100, 20);
-            this.localidadInput.TabIndex = 10;
+            this.localidadInput.TabIndex = 11;
             // 
             // pisoInput
             // 
             this.pisoInput.Location = new System.Drawing.Point(281, 47);
             this.pisoInput.Name = "pisoInput";
             this.pisoInput.Size = new System.Drawing.Size(37, 20);
-            this.pisoInput.TabIndex = 12;
+            this.pisoInput.TabIndex = 13;
             // 
             // numeroDomicilioInput
             // 
             this.numeroDomicilioInput.Location = new System.Drawing.Point(83, 47);
             this.numeroDomicilioInput.Name = "numeroDomicilioInput";
             this.numeroDomicilioInput.Size = new System.Drawing.Size(100, 20);
-            this.numeroDomicilioInput.TabIndex = 9;
+            this.numeroDomicilioInput.TabIndex = 10;
             // 
             // departamentoLabel
             // 
@@ -204,7 +207,7 @@
             this.codigoPostalInput.Location = new System.Drawing.Point(281, 21);
             this.codigoPostalInput.Name = "codigoPostalInput";
             this.codigoPostalInput.Size = new System.Drawing.Size(37, 20);
-            this.codigoPostalInput.TabIndex = 11;
+            this.codigoPostalInput.TabIndex = 12;
             // 
             // direccionLabel
             // 
@@ -238,28 +241,28 @@
             this.calleInput.Location = new System.Drawing.Point(83, 21);
             this.calleInput.Name = "calleInput";
             this.calleInput.Size = new System.Drawing.Size(100, 20);
-            this.calleInput.TabIndex = 8;
+            this.calleInput.TabIndex = 9;
             // 
             // fechaDeNacimientoInput
             // 
             this.fechaDeNacimientoInput.Location = new System.Drawing.Point(104, 127);
             this.fechaDeNacimientoInput.Name = "fechaDeNacimientoInput";
             this.fechaDeNacimientoInput.Size = new System.Drawing.Size(235, 20);
-            this.fechaDeNacimientoInput.TabIndex = 6;
+            this.fechaDeNacimientoInput.TabIndex = 7;
             // 
             // dniInput
             // 
             this.dniInput.Location = new System.Drawing.Point(104, 75);
             this.dniInput.Name = "dniInput";
             this.dniInput.Size = new System.Drawing.Size(235, 20);
-            this.dniInput.TabIndex = 4;
+            this.dniInput.TabIndex = 5;
             // 
             // nombreInput
             // 
             this.nombreInput.Location = new System.Drawing.Point(104, 23);
             this.nombreInput.Name = "nombreInput";
             this.nombreInput.Size = new System.Drawing.Size(235, 20);
-            this.nombreInput.TabIndex = 2;
+            this.nombreInput.TabIndex = 3;
             // 
             // label3
             // 
@@ -284,7 +287,7 @@
             this.apellidoInput.Location = new System.Drawing.Point(104, 49);
             this.apellidoInput.Name = "apellidoInput";
             this.apellidoInput.Size = new System.Drawing.Size(235, 20);
-            this.apellidoInput.TabIndex = 3;
+            this.apellidoInput.TabIndex = 4;
             // 
             // telefonoLabel
             // 
@@ -318,7 +321,7 @@
             this.telefonoInput.Location = new System.Drawing.Point(104, 153);
             this.telefonoInput.Name = "telefonoInput";
             this.telefonoInput.Size = new System.Drawing.Size(235, 20);
-            this.telefonoInput.TabIndex = 7;
+            this.telefonoInput.TabIndex = 8;
             // 
             // mailLabel
             // 
@@ -334,7 +337,7 @@
             this.mailInput.Location = new System.Drawing.Point(104, 101);
             this.mailInput.Name = "mailInput";
             this.mailInput.Size = new System.Drawing.Size(235, 20);
-            this.mailInput.TabIndex = 5;
+            this.mailInput.TabIndex = 6;
             // 
             // resultadosGrid
             // 
@@ -374,21 +377,33 @@
             this.botonBuscar.UseVisualStyleBackColor = true;
             this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
             // 
-            // botonModificar
+            // botonAceptar
             // 
-            this.botonModificar.Location = new System.Drawing.Point(389, 401);
-            this.botonModificar.Name = "botonModificar";
-            this.botonModificar.Size = new System.Drawing.Size(110, 40);
-            this.botonModificar.TabIndex = 1;
-            this.botonModificar.Text = "Modificar";
-            this.botonModificar.UseVisualStyleBackColor = true;
+            this.botonAceptar.Location = new System.Drawing.Point(343, 407);
+            this.botonAceptar.Name = "botonAceptar";
+            this.botonAceptar.Size = new System.Drawing.Size(97, 28);
+            this.botonAceptar.TabIndex = 1;
+            this.botonAceptar.Text = "Aceptar";
+            this.botonAceptar.UseVisualStyleBackColor = true;
+            this.botonAceptar.Click += new System.EventHandler(this.botonAceptar_Click);
+            // 
+            // botonCancelar
+            // 
+            this.botonCancelar.Location = new System.Drawing.Point(461, 407);
+            this.botonCancelar.Name = "botonCancelar";
+            this.botonCancelar.Size = new System.Drawing.Size(97, 28);
+            this.botonCancelar.TabIndex = 2;
+            this.botonCancelar.Text = "Cancelar";
+            this.botonCancelar.UseVisualStyleBackColor = true;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
             // ModificacionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 460);
-            this.Controls.Add(this.botonModificar);
+            this.Controls.Add(this.botonCancelar);
+            this.Controls.Add(this.botonAceptar);
             this.Controls.Add(this.botonBuscar);
             this.Controls.Add(this.modificacionClienteLabel);
             this.Controls.Add(this.clientesEncontradosLabel);
@@ -441,6 +456,7 @@
         private System.Windows.Forms.RadioButton deshabilitadoRadioButton;
         private System.Windows.Forms.RadioButton habilitadoRadioButton;
         private System.Windows.Forms.Button botonBuscar;
-        private System.Windows.Forms.Button botonModificar;
+        private System.Windows.Forms.Button botonAceptar;
+        private System.Windows.Forms.Button botonCancelar;
     }
 }
