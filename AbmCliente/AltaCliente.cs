@@ -23,7 +23,7 @@ namespace PagoAgilFrba.AbmCliente
         private Cliente nuevoCliente = new Cliente();
         private Util utils = new Util();
 
-        // Constructor
+        // Constructores
         public AltaCliente()
         {
             InitializeComponent();

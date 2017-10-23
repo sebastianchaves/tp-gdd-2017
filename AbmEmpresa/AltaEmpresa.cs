@@ -12,9 +12,33 @@ namespace PagoAgilFrba.AbmEmpresa
 {
     public partial class AltaEmpresa : Form
     {
+
+        // Constructores
         public AltaEmpresa()
         {
             InitializeComponent();
         }
+
+        // Metodos
+        private void agregarEmpresa()
+        {
+
+        }
+
+        // Eventos
+        // Boton Aceptar
+        private void botonAceptar_Click(object sender, EventArgs e)
+        {
+            agregarEmpresa();
+        }
+
+        // Boton Cancelar
+        private void botonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
     }
 }
