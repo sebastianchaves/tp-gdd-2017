@@ -63,6 +63,7 @@
             this.botonBuscar = new System.Windows.Forms.Button();
             this.botonAceptar = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
+            this.botonSeleccionar = new System.Windows.Forms.Button();
             this.datosClienteGroupBox.SuspendLayout();
             this.domicilioGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resultadosGrid)).BeginInit();
@@ -105,6 +106,7 @@
             // deshabilitadoRadioButton
             // 
             this.deshabilitadoRadioButton.AutoSize = true;
+            this.deshabilitadoRadioButton.Enabled = false;
             this.deshabilitadoRadioButton.Location = new System.Drawing.Point(250, 303);
             this.deshabilitadoRadioButton.Name = "deshabilitadoRadioButton";
             this.deshabilitadoRadioButton.Size = new System.Drawing.Size(89, 17);
@@ -117,6 +119,7 @@
             // habilitadoRadioButton
             // 
             this.habilitadoRadioButton.AutoSize = true;
+            this.habilitadoRadioButton.Enabled = false;
             this.habilitadoRadioButton.Location = new System.Drawing.Point(104, 303);
             this.habilitadoRadioButton.Name = "habilitadoRadioButton";
             this.habilitadoRadioButton.Size = new System.Drawing.Size(72, 17);
@@ -346,7 +349,6 @@
             this.resultadosGrid.Name = "resultadosGrid";
             this.resultadosGrid.Size = new System.Drawing.Size(231, 321);
             this.resultadosGrid.TabIndex = 8;
-            this.resultadosGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultadosGrid_SelectionChanged);
             // 
             // clientesEncontradosLabel
             // 
@@ -369,9 +371,9 @@
             // 
             // botonBuscar
             // 
-            this.botonBuscar.Location = new System.Drawing.Point(75, 401);
+            this.botonBuscar.Location = new System.Drawing.Point(39, 401);
             this.botonBuscar.Name = "botonBuscar";
-            this.botonBuscar.Size = new System.Drawing.Size(110, 40);
+            this.botonBuscar.Size = new System.Drawing.Size(90, 30);
             this.botonBuscar.TabIndex = 0;
             this.botonBuscar.Text = "Buscar";
             this.botonBuscar.UseVisualStyleBackColor = true;
@@ -397,11 +399,23 @@
             this.botonCancelar.UseVisualStyleBackColor = true;
             this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
+            // botonSeleccionar
+            // 
+            this.botonSeleccionar.Enabled = false;
+            this.botonSeleccionar.Location = new System.Drawing.Point(135, 401);
+            this.botonSeleccionar.Name = "botonSeleccionar";
+            this.botonSeleccionar.Size = new System.Drawing.Size(90, 30);
+            this.botonSeleccionar.TabIndex = 15;
+            this.botonSeleccionar.Text = "Seleccionar";
+            this.botonSeleccionar.UseVisualStyleBackColor = true;
+            this.botonSeleccionar.Click += new System.EventHandler(this.botonSeleccionar_Click);
+            // 
             // ModificacionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 460);
+            this.Controls.Add(this.botonSeleccionar);
             this.Controls.Add(this.botonCancelar);
             this.Controls.Add(this.botonAceptar);
             this.Controls.Add(this.botonBuscar);
@@ -458,5 +472,6 @@
         private System.Windows.Forms.Button botonBuscar;
         private System.Windows.Forms.Button botonAceptar;
         private System.Windows.Forms.Button botonCancelar;
+        private System.Windows.Forms.Button botonSeleccionar;
     }
 }

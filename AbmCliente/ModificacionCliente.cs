@@ -77,6 +77,9 @@ namespace PagoAgilFrba.AbmCliente
 
         private void habilitarDeshabilitar()
         {
+            this.habilitadoRadioButton.Enabled = true;
+            this.deshabilitadoRadioButton.Enabled = true;
+
             if (this.clienteACargar.habilitado)
             {
                 this.habilitadoRadioButton.PerformClick();
@@ -126,6 +129,7 @@ namespace PagoAgilFrba.AbmCliente
         }
 
         // Eventos
+        // Boton Buscar
         private void botonBuscar_Click(object sender, EventArgs e)
         {
             utils.iniciarGrids(resultadosGrid);
@@ -136,7 +140,8 @@ namespace PagoAgilFrba.AbmCliente
             }
         }
 
-        private void resultadosGrid_SelectionChanged(object sender, EventArgs e)
+        // Boton Seleccionar
+        private void botonSeleccionar_Click(object sender, EventArgs e)
         {
             var cliente = resultadosGrid.SelectedCells[0].RowIndex;
             this.clienteACargar = new Cliente();
@@ -145,6 +150,7 @@ namespace PagoAgilFrba.AbmCliente
             this.cargarDatos();
         }
 
+        // Boton Aceptar
         private void botonAceptar_Click(object sender, EventArgs e)
         {
             this.modificarCliente();
@@ -153,35 +159,22 @@ namespace PagoAgilFrba.AbmCliente
             this.clienteACargar = new Cliente();
         }
 
+        // Boton Cancelar
         private void botonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Habilitar
         private void habilitadoRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.clienteACargar.dni != null)
-            {
-                this.clienteModificado.habilitado = true;
-                MessageBox.Show("El cliente ha sido habilitado.");
-            }
-            else
-            {
-                MessageBox.Show("Aún no ha buscado ningún cliente.");
-            }
+            this.clienteModificado.habilitado = true;
         }
 
+        // Deshabilitar
         private void deshabilitadoRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.clienteACargar.dni != null)
-            {
-                this.clienteModificado.habilitado = false;
-                MessageBox.Show("El cliente ha sido deshabilitado.");
-            }
-            else
-            {
-                MessageBox.Show("Aún no ha buscado ningún cliente.");
-            }
+            this.clienteModificado.habilitado = false;
         }
 
     }

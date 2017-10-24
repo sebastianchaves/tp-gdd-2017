@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buscarGroupBox = new System.Windows.Forms.GroupBox();
+            this.rubroCombo = new System.Windows.Forms.ComboBox();
             this.botonVolver = new System.Windows.Forms.Button();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.cuitLabel = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.botonBuscar = new System.Windows.Forms.Button();
             this.cuitInput = new System.Windows.Forms.TextBox();
             this.nombreInput = new System.Windows.Forms.TextBox();
-            this.rubroCombo = new System.Windows.Forms.ComboBox();
             this.cuitTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.buscarGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,15 @@
             this.buscarGroupBox.TabStop = false;
             this.buscarGroupBox.Text = "Busqueda de Empresa";
             // 
+            // rubroCombo
+            // 
+            this.rubroCombo.FormattingEnabled = true;
+            this.rubroCombo.Location = new System.Drawing.Point(105, 128);
+            this.rubroCombo.Name = "rubroCombo";
+            this.rubroCombo.Size = new System.Drawing.Size(187, 21);
+            this.rubroCombo.TabIndex = 2;
+            this.rubroCombo.SelectedIndexChanged += new System.EventHandler(this.rubroCombo_SelectedIndexChanged);
+            // 
             // botonVolver
             // 
             this.botonVolver.Location = new System.Drawing.Point(322, 93);
@@ -69,6 +78,7 @@
             this.botonVolver.TabIndex = 3;
             this.botonVolver.Text = "Volver";
             this.botonVolver.UseVisualStyleBackColor = true;
+            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
             // 
             // nombreLabel
             // 
@@ -122,6 +132,7 @@
             this.cuitInput.Name = "cuitInput";
             this.cuitInput.Size = new System.Drawing.Size(187, 20);
             this.cuitInput.TabIndex = 1;
+            this.cuitInput.Leave += new System.EventHandler(this.cuitInput_Leave);
             // 
             // nombreInput
             // 
@@ -129,14 +140,7 @@
             this.nombreInput.Name = "nombreInput";
             this.nombreInput.Size = new System.Drawing.Size(187, 20);
             this.nombreInput.TabIndex = 0;
-            // 
-            // rubroCombo
-            // 
-            this.rubroCombo.FormattingEnabled = true;
-            this.rubroCombo.Location = new System.Drawing.Point(105, 128);
-            this.rubroCombo.Name = "rubroCombo";
-            this.rubroCombo.Size = new System.Drawing.Size(187, 21);
-            this.rubroCombo.TabIndex = 2;
+            this.nombreInput.Leave += new System.EventHandler(this.nombreInput_Leave);
             // 
             // BusquedaEmpresa
             // 

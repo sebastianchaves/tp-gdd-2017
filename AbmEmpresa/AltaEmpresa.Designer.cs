@@ -48,18 +48,18 @@
             // altaEmpresaLabel
             // 
             this.altaEmpresaLabel.AutoSize = true;
-            this.altaEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.altaEmpresaLabel.Location = new System.Drawing.Point(106, 9);
+            this.altaEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.altaEmpresaLabel.Location = new System.Drawing.Point(117, 9);
             this.altaEmpresaLabel.Name = "altaEmpresaLabel";
-            this.altaEmpresaLabel.Size = new System.Drawing.Size(122, 24);
+            this.altaEmpresaLabel.Size = new System.Drawing.Size(105, 20);
             this.altaEmpresaLabel.TabIndex = 0;
             this.altaEmpresaLabel.Text = "Alta Empresa";
             // 
             // botonAceptar
             // 
-            this.botonAceptar.Location = new System.Drawing.Point(77, 209);
+            this.botonAceptar.Location = new System.Drawing.Point(76, 210);
             this.botonAceptar.Name = "botonAceptar";
-            this.botonAceptar.Size = new System.Drawing.Size(89, 29);
+            this.botonAceptar.Size = new System.Drawing.Size(90, 30);
             this.botonAceptar.TabIndex = 4;
             this.botonAceptar.Text = "Aceptar";
             this.botonAceptar.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // 
             // botonCancelar
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(172, 209);
+            this.botonCancelar.Location = new System.Drawing.Point(172, 210);
             this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(89, 29);
+            this.botonCancelar.Size = new System.Drawing.Size(90, 30);
             this.botonCancelar.TabIndex = 5;
             this.botonCancelar.Text = "Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;

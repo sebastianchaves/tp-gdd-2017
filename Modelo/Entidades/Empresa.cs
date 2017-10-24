@@ -28,6 +28,15 @@ namespace PagoAgilFrba.Modelo.Entidades
             this.rubro = rubro;
         }
 
+        public Empresa(String nombre, int cuit, String rubro, String direccion, Boolean habilitacion)
+        {
+            this.nombre = nombre;
+            this.cuit = cuit;
+            this.rubro = rubro;
+            this.direccion = direccion;
+            this.habilitada = habilitacion;
+        }
+
     }
 
 }

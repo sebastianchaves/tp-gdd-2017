@@ -154,6 +154,9 @@
     <EmbeddedResource Include="AbmEmpresa\AltaEmpresa.resx">
       <DependentUpon>AltaEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AbmEmpresa\BajaEmpresa.resx">
+      <DependentUpon>BajaEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AbmEmpresa\ModificacionEmpresa.resx">
       <DependentUpon>ModificacionEmpresa.cs</DependentUpon>
     </EmbeddedResource>

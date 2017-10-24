@@ -21,6 +21,9 @@ namespace PagoAgilFrba.Busquedas
         private EmpresaDAO empresaDao;
         private Util util;
         private DataGridView resultadosGrid;
+        private String nombreABuscar;
+        private int cuitABuscar;
+        private String rubroABuscar;
 
         // Constructores
         public BusquedaEmpresa(DataGridView resultadosGrid)
@@ -48,29 +51,6 @@ namespace PagoAgilFrba.Busquedas
             rubroCombo.DataSource = dataSource;
         }
 
-        private String cargarNombre()
-        {
-            return this.nombreInput.Text;
-        }
-
-        private int cargarCuit()
-        {
-            try
-            {
-                return Int32.Parse(cuitInput.Text);
-            }
-            catch (Exception ex)
-            {
-                util.catchearErrorFormato(ex, cuitTooltip, cuitInput);
-                return 0;
-            }
-        }
-
-        private String cargarRubro()
-        {
-            return this.rubroCombo.SelectedItem.ToString();
-        }
-
         private void cargarDataGridEmpresas(IList<Empresa> empresas)
         {
             DataTable resultadosEmpresas = new DataTable();
@@ -90,9 +70,9 @@ namespace PagoAgilFrba.Busquedas
         // Boton Buscar
         private void botonBuscar_Click(object sender, EventArgs e)
         {
-            this.empresasEncontradas = this.empresaDao.findEmpresa(this.cargarNombre(),
-                                                                this.cargarCuit(),
-                                                                this.cargarRubro());
+            this.empresasEncontradas = this.empresaDao.findEmpresa(this.nombreABuscar,
+                                                                this.cuitABuscar,
+                                                                this.rubroABuscar);
             if (empresasEncontradas.Count() == 0)
             {
                 MessageBox.Show("No existe ninguna empresa que concuerde con esos parámetros.");
@@ -103,6 +83,37 @@ namespace PagoAgilFrba.Busquedas
                 this.Close();
             }
 
+        }
+
+        // Boton Volver
+        private void botonVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // Carga Nombre
+        private void nombreInput_Leave(object sender, EventArgs e)
+        {
+            this.nombreABuscar = this.nombreInput.Text;
+        }
+
+        // Carga Cuit
+        private void cuitInput_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                this.cuitABuscar = Int32.Parse(cuitInput.Text);
+            }
+            catch (Exception ex)
+            {
+                util.catchearErrorFormato(ex, cuitTooltip, cuitInput);
+            }
+        }
+
+        // Carga Rubro
+        private void rubroCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.rubroABuscar = this.rubroCombo.SelectedItem.ToString();
         }
 
     }

@@ -16,6 +16,12 @@ namespace PagoAgilFrba.Modelo.DAOs
 
         }
 
+        // Updates
+        public void updateEmpresa(Empresa empresaUpdate)
+        {
+
+        }
+
         // Exists
         public Boolean existeCuit(int cuit)
         {
@@ -28,10 +34,10 @@ namespace PagoAgilFrba.Modelo.DAOs
             List<String> rubros = new List<String>();
             
             // TODO es para probar
-            rubros.Add("Rubro 1");
-            rubros.Add("Rubro 2");
-            rubros.Add("Rubro 3");
-            rubros.Add("Rubro 4");
+            rubros.Add("RUBRO_PRUEBA_1");
+            rubros.Add("RUBRO_PRUEBA_2");
+            rubros.Add("RUBRO_PRUEBA_3");
+            rubros.Add("RUBRO_PRUEBA_4");
 
             return rubros;
         }
@@ -41,10 +47,10 @@ namespace PagoAgilFrba.Modelo.DAOs
             IList<Empresa> resultados = new List<Empresa>();
 
             // TODO para probar
-            resultados.Add(new Empresa(nombreEmpresa, cuitEmpresa, rubroEmpresa));
-            resultados.Add(new Empresa(nombreEmpresa, cuitEmpresa, rubroEmpresa));
-            resultados.Add(new Empresa(nombreEmpresa, cuitEmpresa, rubroEmpresa));
-            resultados.Add(new Empresa(nombreEmpresa, cuitEmpresa, rubroEmpresa));
+            resultados.Add(new Empresa("NOMBRE_PRUEBA_1", cuitEmpresa, "RUBRO_PRUEBA_1", "DIRECCION_PRUEBA_1", true));
+            resultados.Add(new Empresa("NOMBRE_PRUEBA_2", cuitEmpresa, "RUBRO_PRUEBA_2", "DIRECCION_PRUEBA_2", false));
+            resultados.Add(new Empresa("NOMBRE_PRUEBA_3", cuitEmpresa, "RUBRO_PRUEBA_3", "DIRECCION_PRUEBA_3", true));
+            resultados.Add(new Empresa("NOMBRE_PRUEBA_4", cuitEmpresa, "RUBRO_PRUEBA_4", "DIRECCION_PRUEBA_4", false));
 
             return resultados;
         }
