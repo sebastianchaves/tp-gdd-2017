@@ -1,5 +1,6 @@
 ﻿
 using PagoAgilFrba.AbmCliente;
+using PagoAgilFrba.AbmEmpresa;
 using PagoAgilFrba.AbmRol;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace PagoAgilFrba
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ModificacionCliente());
+            Application.Run(new AltaEmpresa());
 
         }
     }

@@ -9,7 +9,7 @@ namespace PagoAgilFrba.Modelo.Entidades
     class Empresa
     {
         public String nombre;
-        public int dni;
+        public int cuit;
         public String direccion;
         public String rubro;
         public Boolean habilitada;

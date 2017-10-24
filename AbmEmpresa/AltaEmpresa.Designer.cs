@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.altaEmpresaLabel = new System.Windows.Forms.Label();
             this.botonAceptar = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@
             this.cuitInput = new System.Windows.Forms.TextBox();
             this.direccionInput = new System.Windows.Forms.TextBox();
             this.nombreInput = new System.Windows.Forms.TextBox();
+            this.cuitTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.datosEmpresaGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +135,7 @@
             this.rubroCombo.Name = "rubroCombo";
             this.rubroCombo.Size = new System.Drawing.Size(179, 21);
             this.rubroCombo.TabIndex = 3;
+            this.rubroCombo.SelectedIndexChanged += new System.EventHandler(this.rubroCombo_SelectedIndexChanged);
             // 
             // cuitInput
             // 
@@ -140,6 +143,7 @@
             this.cuitInput.Name = "cuitInput";
             this.cuitInput.Size = new System.Drawing.Size(179, 20);
             this.cuitInput.TabIndex = 1;
+            this.cuitInput.Leave += new System.EventHandler(this.cuitInput_Leave_1);
             // 
             // direccionInput
             // 
@@ -147,6 +151,7 @@
             this.direccionInput.Name = "direccionInput";
             this.direccionInput.Size = new System.Drawing.Size(179, 20);
             this.direccionInput.TabIndex = 2;
+            this.direccionInput.Leave += new System.EventHandler(this.direccionInput_Leave);
             // 
             // nombreInput
             // 
@@ -154,6 +159,7 @@
             this.nombreInput.Name = "nombreInput";
             this.nombreInput.Size = new System.Drawing.Size(179, 20);
             this.nombreInput.TabIndex = 0;
+            this.nombreInput.Leave += new System.EventHandler(this.nombreInput_Leave);
             // 
             // AltaEmpresa
             // 
@@ -187,5 +193,6 @@
         private System.Windows.Forms.Label rubroLabel;
         private System.Windows.Forms.Label direccionLabel;
         private System.Windows.Forms.Label cuitLabel;
+        private System.Windows.Forms.ToolTip cuitTooltip;
     }
 }
