@@ -19,7 +19,6 @@ namespace PagoAgilFrba.Busquedas
         // Atributos
         private IList<Cliente> resultados;
         private IList<Cliente> clientes;
-        private Cliente cliente;
         private ClienteDAO clienteDao;
         private Util utils;
         private DataGridView resultadosGrid;
@@ -89,7 +88,7 @@ namespace PagoAgilFrba.Busquedas
             {
                 MessageBox.Show("No existe ningún cliente que concuerde con esos parámetros.");
             }
-            else if (resultados.Count() > 1)
+            else if (resultados.Count() > 0)
             {
                 cargarDataGridClientes(resultados);
                 this.Close();

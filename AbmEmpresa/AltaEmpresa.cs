@@ -58,7 +58,7 @@ namespace PagoAgilFrba.AbmEmpresa
 
         private void cargarRubros()
         {
-            List<String> rubros = this.empresaDao.rubrosDisponibles();
+            List<String> rubros = this.empresaDao.findRubrosDisponibles();
 
             var dataSource = new List<String>();
 

@@ -105,6 +105,12 @@
     <Compile Include="Busquedas\BusquedaCliente.Designer.cs">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Busquedas\BusquedaEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaEmpresa.Designer.cs">
+      <DependentUpon>BusquedaEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,11 +154,17 @@
     <EmbeddedResource Include="AbmEmpresa\AltaEmpresa.resx">
       <DependentUpon>AltaEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AbmEmpresa\ModificacionEmpresa.resx">
+      <DependentUpon>ModificacionEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AbmRol\AltaRol.resx">
       <DependentUpon>AltaRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Busquedas\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\BusquedaEmpresa.resx">
+      <DependentUpon>BusquedaEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
