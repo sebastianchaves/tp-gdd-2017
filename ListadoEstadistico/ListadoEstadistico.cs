@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PagoAgilFrba.ListadoEstadistico
 {
-    public partial class Listado : Form
+    public partial class ListadoEstadistico : Form
     {
-        public Listado()
+        public ListadoEstadistico()
         {
             InitializeComponent();
         }
