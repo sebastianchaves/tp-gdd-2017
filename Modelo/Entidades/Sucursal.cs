@@ -20,5 +20,13 @@ namespace PagoAgilFrba.Modelo.Entidades
         {
         }
 
+        public Sucursal(String nombre, String direccion, int codigoPostal, Boolean habilitacion)
+        {
+            this.nombre = nombre;
+            this.direccion = direccion;
+            this.codigoPostal = codigoPostal;
+            this.habilitada = habilitacion;
+        }
+
     }
 }

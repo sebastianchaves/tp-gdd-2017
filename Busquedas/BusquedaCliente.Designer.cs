@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buscarGroupBox = new System.Windows.Forms.GroupBox();
+            this.botonVolver = new System.Windows.Forms.Button();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.apellidoLabel = new System.Windows.Forms.Label();
             this.dniLabel = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.dniInput = new System.Windows.Forms.TextBox();
             this.apellidoInput = new System.Windows.Forms.TextBox();
             this.nombreInput = new System.Windows.Forms.TextBox();
-            this.botonVolver = new System.Windows.Forms.Button();
             this.dniTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.buscarGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,16 @@
             this.buscarGroupBox.TabIndex = 5;
             this.buscarGroupBox.TabStop = false;
             this.buscarGroupBox.Text = "Busqueda de Cliente";
+            // 
+            // botonVolver
+            // 
+            this.botonVolver.Location = new System.Drawing.Point(322, 93);
+            this.botonVolver.Name = "botonVolver";
+            this.botonVolver.Size = new System.Drawing.Size(84, 29);
+            this.botonVolver.TabIndex = 3;
+            this.botonVolver.Text = "Volver";
+            this.botonVolver.UseVisualStyleBackColor = true;
+            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
             // 
             // nombreLabel
             // 
@@ -128,16 +138,6 @@
             this.nombreInput.Size = new System.Drawing.Size(187, 20);
             this.nombreInput.TabIndex = 0;
             // 
-            // botonVolver
-            // 
-            this.botonVolver.Location = new System.Drawing.Point(322, 93);
-            this.botonVolver.Name = "botonVolver";
-            this.botonVolver.Size = new System.Drawing.Size(84, 29);
-            this.botonVolver.TabIndex = 3;
-            this.botonVolver.Text = "Volver";
-            this.botonVolver.UseVisualStyleBackColor = true;
-            this.botonVolver.Click += new System.EventHandler(this.botonVolver_Click);
-            // 
             // BusquedaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,7 +145,7 @@
             this.ClientSize = new System.Drawing.Size(437, 185);
             this.Controls.Add(this.buscarGroupBox);
             this.Name = "BusquedaCliente";
-            this.Text = "BusquedaCliente";
+            this.Text = "Busqueda Cliente";
             this.buscarGroupBox.ResumeLayout(false);
             this.buscarGroupBox.PerformLayout();
             this.ResumeLayout(false);

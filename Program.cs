@@ -1,5 +1,4 @@
-﻿
-using PagoAgilFrba.AbmCliente;
+﻿using PagoAgilFrba.AbmCliente;
 using PagoAgilFrba.AbmEmpresa;
 using PagoAgilFrba.AbmRol;
 using PagoAgilFrba.AbmSucursal;
@@ -21,8 +20,7 @@ namespace PagoAgilFrba
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AltaSucursal());
-
+            Application.Run(new BajaSucursal());
         }
     }
 }

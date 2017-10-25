@@ -1,6 +1,6 @@
 ﻿namespace PagoAgilFrba.Busquedas
 {
-    partial class BusquedaEmpresa
+    partial class BusquedaSucursal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,46 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buscarGroupBox = new System.Windows.Forms.GroupBox();
-            this.rubroCombo = new System.Windows.Forms.ComboBox();
+            this.busquedaSucursalGroupBox = new System.Windows.Forms.GroupBox();
+            this.codigoPostalInput = new System.Windows.Forms.TextBox();
             this.botonVolver = new System.Windows.Forms.Button();
             this.nombreLabel = new System.Windows.Forms.Label();
-            this.cuitLabel = new System.Windows.Forms.Label();
-            this.rubroLabel = new System.Windows.Forms.Label();
+            this.direccionLabel = new System.Windows.Forms.Label();
+            this.codigoPostalLabel = new System.Windows.Forms.Label();
             this.descripcionBuscarLabel = new System.Windows.Forms.Label();
             this.botonBuscar = new System.Windows.Forms.Button();
-            this.cuitInput = new System.Windows.Forms.TextBox();
+            this.direccionInput = new System.Windows.Forms.TextBox();
             this.nombreInput = new System.Windows.Forms.TextBox();
-            this.cuitTooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.buscarGroupBox.SuspendLayout();
+            this.codigoPostalTooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.busquedaSucursalGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buscarGroupBox
+            // busquedaSucursalGroupBox
             // 
-            this.buscarGroupBox.Controls.Add(this.rubroCombo);
-            this.buscarGroupBox.Controls.Add(this.botonVolver);
-            this.buscarGroupBox.Controls.Add(this.nombreLabel);
-            this.buscarGroupBox.Controls.Add(this.cuitLabel);
-            this.buscarGroupBox.Controls.Add(this.rubroLabel);
-            this.buscarGroupBox.Controls.Add(this.descripcionBuscarLabel);
-            this.buscarGroupBox.Controls.Add(this.botonBuscar);
-            this.buscarGroupBox.Controls.Add(this.cuitInput);
-            this.buscarGroupBox.Controls.Add(this.nombreInput);
-            this.buscarGroupBox.Location = new System.Drawing.Point(12, 12);
-            this.buscarGroupBox.Name = "buscarGroupBox";
-            this.buscarGroupBox.Size = new System.Drawing.Size(412, 163);
-            this.buscarGroupBox.TabIndex = 6;
-            this.buscarGroupBox.TabStop = false;
-            this.buscarGroupBox.Text = "Busqueda de Empresa";
+            this.busquedaSucursalGroupBox.Controls.Add(this.codigoPostalInput);
+            this.busquedaSucursalGroupBox.Controls.Add(this.botonVolver);
+            this.busquedaSucursalGroupBox.Controls.Add(this.nombreLabel);
+            this.busquedaSucursalGroupBox.Controls.Add(this.direccionLabel);
+            this.busquedaSucursalGroupBox.Controls.Add(this.codigoPostalLabel);
+            this.busquedaSucursalGroupBox.Controls.Add(this.descripcionBuscarLabel);
+            this.busquedaSucursalGroupBox.Controls.Add(this.botonBuscar);
+            this.busquedaSucursalGroupBox.Controls.Add(this.direccionInput);
+            this.busquedaSucursalGroupBox.Controls.Add(this.nombreInput);
+            this.busquedaSucursalGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.busquedaSucursalGroupBox.Name = "busquedaSucursalGroupBox";
+            this.busquedaSucursalGroupBox.Size = new System.Drawing.Size(412, 163);
+            this.busquedaSucursalGroupBox.TabIndex = 7;
+            this.busquedaSucursalGroupBox.TabStop = false;
+            this.busquedaSucursalGroupBox.Text = "Busqueda de Sucursal";
             // 
-            // rubroCombo
+            // codigoPostalInput
             // 
-            this.rubroCombo.FormattingEnabled = true;
-            this.rubroCombo.Location = new System.Drawing.Point(105, 128);
-            this.rubroCombo.Name = "rubroCombo";
-            this.rubroCombo.Size = new System.Drawing.Size(187, 21);
-            this.rubroCombo.TabIndex = 2;
-            this.rubroCombo.SelectedIndexChanged += new System.EventHandler(this.rubroCombo_SelectedIndexChanged);
+            this.codigoPostalInput.Location = new System.Drawing.Point(116, 128);
+            this.codigoPostalInput.Name = "codigoPostalInput";
+            this.codigoPostalInput.Size = new System.Drawing.Size(187, 20);
+            this.codigoPostalInput.TabIndex = 8;
+            this.codigoPostalInput.Leave += new System.EventHandler(this.codigoPostalInput_Leave);
             // 
             // botonVolver
             // 
@@ -83,29 +82,29 @@
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(48, 63);
+            this.nombreLabel.Location = new System.Drawing.Point(30, 63);
             this.nombreLabel.Name = "nombreLabel";
             this.nombreLabel.Size = new System.Drawing.Size(47, 13);
             this.nombreLabel.TabIndex = 5;
             this.nombreLabel.Text = "Nombre:";
             // 
-            // cuitLabel
+            // direccionLabel
             // 
-            this.cuitLabel.AutoSize = true;
-            this.cuitLabel.Location = new System.Drawing.Point(48, 97);
-            this.cuitLabel.Name = "cuitLabel";
-            this.cuitLabel.Size = new System.Drawing.Size(28, 13);
-            this.cuitLabel.TabIndex = 6;
-            this.cuitLabel.Text = "Cuit:";
+            this.direccionLabel.AutoSize = true;
+            this.direccionLabel.Location = new System.Drawing.Point(30, 97);
+            this.direccionLabel.Name = "direccionLabel";
+            this.direccionLabel.Size = new System.Drawing.Size(55, 13);
+            this.direccionLabel.TabIndex = 6;
+            this.direccionLabel.Text = "Dirección:";
             // 
-            // rubroLabel
+            // codigoPostalLabel
             // 
-            this.rubroLabel.AutoSize = true;
-            this.rubroLabel.Location = new System.Drawing.Point(48, 131);
-            this.rubroLabel.Name = "rubroLabel";
-            this.rubroLabel.Size = new System.Drawing.Size(39, 13);
-            this.rubroLabel.TabIndex = 7;
-            this.rubroLabel.Text = "Rubro:";
+            this.codigoPostalLabel.AutoSize = true;
+            this.codigoPostalLabel.Location = new System.Drawing.Point(30, 131);
+            this.codigoPostalLabel.Name = "codigoPostalLabel";
+            this.codigoPostalLabel.Size = new System.Drawing.Size(75, 13);
+            this.codigoPostalLabel.TabIndex = 7;
+            this.codigoPostalLabel.Text = "Codigo Postal:";
             // 
             // descripcionBuscarLabel
             // 
@@ -126,48 +125,48 @@
             this.botonBuscar.UseVisualStyleBackColor = true;
             this.botonBuscar.Click += new System.EventHandler(this.botonBuscar_Click);
             // 
-            // cuitInput
+            // direccionInput
             // 
-            this.cuitInput.Location = new System.Drawing.Point(105, 94);
-            this.cuitInput.Name = "cuitInput";
-            this.cuitInput.Size = new System.Drawing.Size(187, 20);
-            this.cuitInput.TabIndex = 1;
-            this.cuitInput.Leave += new System.EventHandler(this.cuitInput_Leave);
+            this.direccionInput.Location = new System.Drawing.Point(116, 94);
+            this.direccionInput.Name = "direccionInput";
+            this.direccionInput.Size = new System.Drawing.Size(187, 20);
+            this.direccionInput.TabIndex = 1;
+            this.direccionInput.Leave += new System.EventHandler(this.direccionInput_Leave);
             // 
             // nombreInput
             // 
-            this.nombreInput.Location = new System.Drawing.Point(105, 60);
+            this.nombreInput.Location = new System.Drawing.Point(116, 60);
             this.nombreInput.Name = "nombreInput";
             this.nombreInput.Size = new System.Drawing.Size(187, 20);
             this.nombreInput.TabIndex = 0;
             this.nombreInput.Leave += new System.EventHandler(this.nombreInput_Leave);
             // 
-            // BusquedaEmpresa
+            // BusquedaSucursal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 185);
-            this.Controls.Add(this.buscarGroupBox);
-            this.Name = "BusquedaEmpresa";
-            this.Text = "Busqueda Empresa";
-            this.buscarGroupBox.ResumeLayout(false);
-            this.buscarGroupBox.PerformLayout();
+            this.Controls.Add(this.busquedaSucursalGroupBox);
+            this.Name = "BusquedaSucursal";
+            this.Text = "Busqueda Sucursal";
+            this.busquedaSucursalGroupBox.ResumeLayout(false);
+            this.busquedaSucursalGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox buscarGroupBox;
+        private System.Windows.Forms.GroupBox busquedaSucursalGroupBox;
         private System.Windows.Forms.Button botonVolver;
         private System.Windows.Forms.Label nombreLabel;
-        private System.Windows.Forms.Label cuitLabel;
-        private System.Windows.Forms.Label rubroLabel;
+        private System.Windows.Forms.Label direccionLabel;
+        private System.Windows.Forms.Label codigoPostalLabel;
         private System.Windows.Forms.Label descripcionBuscarLabel;
         private System.Windows.Forms.Button botonBuscar;
-        private System.Windows.Forms.TextBox cuitInput;
+        private System.Windows.Forms.TextBox direccionInput;
         private System.Windows.Forms.TextBox nombreInput;
-        private System.Windows.Forms.ComboBox rubroCombo;
-        private System.Windows.Forms.ToolTip cuitTooltip;
+        private System.Windows.Forms.TextBox codigoPostalInput;
+        private System.Windows.Forms.ToolTip codigoPostalTooltip;
     }
 }
