@@ -1,3 +1,5 @@
+*.csproj
+
 # Prerequisites
 *.d
 
