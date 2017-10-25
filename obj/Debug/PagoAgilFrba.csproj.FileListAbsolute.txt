@@ -17,3 +17,6 @@ C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-
 C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmEmpresa.ModificacionEmpresa.resources
 C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.Busquedas.BusquedaEmpresa.resources
 C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmEmpresa.BajaEmpresa.resources
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmSucursal.AltaSucursal.resources
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmSucursal.BajaSucursal.resources
+C:\Users\Chev\Desktop\UTN\2017\Materias\2° Cuatrimestre\Gestion de Datos\TP\tp-gdd-2017-2c\obj\Debug\PagoAgilFrba.AbmSucursal.ModificacionSucursal.resources

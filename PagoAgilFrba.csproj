@@ -99,6 +99,18 @@
     <Compile Include="AbmSucursal\AltaSucursal.Designer.cs">
       <DependentUpon>AltaSucursal.cs</DependentUpon>
     </Compile>
+    <Compile Include="AbmSucursal\BajaSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\BajaSucursal.Designer.cs">
+      <DependentUpon>BajaSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSucursal\ModificacionSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\ModificacionSucursal.Designer.cs">
+      <DependentUpon>ModificacionSucursal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Busquedas\BusquedaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,8 +137,10 @@
     </Compile>
     <Compile Include="Modelo\DAOs\ClienteDAO.cs" />
     <Compile Include="Modelo\DAOs\EmpresaDAO.cs" />
+    <Compile Include="Modelo\DAOs\SucursalDAO.cs" />
     <Compile Include="Modelo\Entidades\Cliente.cs" />
     <Compile Include="Modelo\Entidades\Empresa.cs" />
+    <Compile Include="Modelo\Entidades\Sucursal.cs" />
     <Compile Include="Modelo\Utils\Util.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,6 +176,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AbmRol\AltaRol.resx">
       <DependentUpon>AltaRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\AltaSucursal.resx">
+      <DependentUpon>AltaSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\BajaSucursal.resx">
+      <DependentUpon>BajaSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\ModificacionSucursal.resx">
+      <DependentUpon>ModificacionSucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Busquedas\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
